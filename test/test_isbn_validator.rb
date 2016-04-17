@@ -18,4 +18,10 @@ class TestIsbnValidator < Test::Unit::TestCase
 		assert_equal(true, isbn.calculate_isbn)
 	end
 
+	def test_double_check_isbn
+		isbn = IsbnValidator.new('0-306-40615-2')
+		isbn.convert_into_array
+		assert_equal(true, isbn.double_check_isbn)
+	end
+
 end
