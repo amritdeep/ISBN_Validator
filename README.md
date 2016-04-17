@@ -17,15 +17,15 @@ In summary, you multiply the first digit by 10, the second by 9, the third by 8,
 
 ## To run it
 
-Clone the project in Local machine
+1. Clone the project in Local machine
 
 git clone git@github.com:amritdeep/ISBN_Validator.git
 
-Go to the project path
+2. Go to the project path
 
 cd ../ISBN_Validator
 
-Run isbnvalidator with isbn number (0-306-40615-2) as
+3. Run isbnvalidator with isbn number (0-306-40615-2) as
 
 ruby validator.rb 0-306-40615-2
 
