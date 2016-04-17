@@ -1,7 +1,5 @@
 #!/usr/bin/ruby
 
-require 'pry'
-
 class IsbnValidator
 	def initialize(isbn_num)
 		@isbn_num = isbn_num
