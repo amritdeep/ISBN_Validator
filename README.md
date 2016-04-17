@@ -13,3 +13,20 @@ The first nine digits of an ISBN number is the actual identifier for the book an
 The formula for verifying an ISBN number can be found on: [ISBN-10 check digits on Wikipedia](https://en.wikipedia.org/wiki/International_Standard_Book_Number#ISBN-10_check_digits)
 
 In summary, you multiply the first digit by 10, the second by 9, the third by 8, etc for all 10 digits in the sequence, then divide by 11. If there is a remainder, it is an invalid number. One gotcha is the final digit can in fact be a character, "X" which represents the number 10.
+
+
+## To run it
+
+Clone the project in Local machine
+
+git clone git@github.com:amritdeep/ISBN_Validator.git
+
+Go to the project path
+
+cd ../ISBN_Validator
+
+Run isbnvalidator with isbn number (0-306-40615-2) as
+
+ruby validator.rb 0-306-40615-2
+
+0-306-40615-2 is isbn number
