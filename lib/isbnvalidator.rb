@@ -16,6 +16,10 @@ class IsbnValidator
 		end
 	end
 
+	def double_check_isbn
+		double_calculate_isbn if @isbn_arry.count == 10
+	end
+
 	private
 
 	def convert_into_array(number)
@@ -33,7 +37,7 @@ class IsbnValidator
 		return true
 	end
 
-	def double_check_isbn
+	def double_calculate_isbn
 		result = ((@isbn_arry[0]*1) + (@isbn_arry[1]*2) + (@isbn_arry[2]*3) + (@isbn_arry[3]*4) + (@isbn_arry[4]*5) + (@isbn_arry[5]*6) + (@isbn_arry[6]*7) + (@isbn_arry[7]*8) + (@isbn_arry[8]*9) + (@isbn_arry[9]*10))/11
 		puts "Its is ISBN Number"
 		return true	
